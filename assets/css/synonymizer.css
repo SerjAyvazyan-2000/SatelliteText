@@ -18,13 +18,20 @@
 
 .synonymizer-hero-animation {
     position: absolute;
-    top: 220px;
-    left: 50px;
     width: 380px;
     height: 380px;
-
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, 10%);
 }
-
+.possibilities-asset-animation{
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    top: 0;
+    transform: translate(-10%, 10%);
+    right: 10%;
+}
 
 .img-animation  {
     position: absolute;
@@ -44,7 +51,7 @@
 }
 .img-animation--tree {
     animation: rotate 48s linear infinite, fade-in-out 12s linear infinite;
-    animation-delay: 1s; /* Задержка для синхронизации */
+    animation-delay: 1s;
 }
 
 @keyframes rotate {
@@ -61,7 +68,7 @@
         opacity: 1;
     }
     50%, 90% {
-        opacity: 0.1; /* Немного тускнеет */
+        opacity: 0.1;
     }
     100% {
         opacity: 1;
@@ -70,7 +77,7 @@
 
 @keyframes fade-in-out {
     0%, 40% {
-        opacity: 0.3; /* Немного тускнеет */
+        opacity: 0.3;
     }
     50%, 90% {
         opacity: 1;
@@ -82,13 +89,13 @@
 
 @keyframes fade-in-out-smooth {
     0%, 30% {
-        opacity: 0; /* Полностью исчезает */
+        opacity: 0;
     }
     40%, 70% {
-        opacity: 1; /* Полностью появляется */
+        opacity: 1;
     }
     80%, 100% {
-        opacity: 0; /* Плавно исчезает */
+        opacity: 0;
     }
 }
 .synonymizer-service-item {
@@ -231,6 +238,7 @@
     position: absolute;
     left: 0;
     top: 300px;
+
 }
 .synonymizer-cnt-title{
     text-align: center;
@@ -266,8 +274,17 @@
     position: relative;
     gap: 35px;
 }
+.synonymizer-mobile-animation{
+    display: none;
+}
 
-@media (max-width: 1400px) {
+@media (max-width: 1490px) {
+    .synonymizer-hero-animation {
+        top: 10%;
+        left: 10%;
+        transform: translate(-30%, 20%);
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -283,6 +300,14 @@
     }
     .synonymizer-possibilities-blur{
         display: none;
+    }
+    .synonymizer-mobile-animation{
+        display: block;
+        top: 30%;
+        left: 50%;
+        width: 200px;
+        height: 200px;
+        transform: translate(-50%, -10%);
     }
 
     .synonymizer-hero-section::before {

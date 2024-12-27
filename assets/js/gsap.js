@@ -109,3 +109,13 @@ gsap.to(".presentation-advantages-parallax", {
         scrub: true,
     },
 });
+
+gsap.to(".synonymizer-animation ", {
+    y: 250,
+    scrollTrigger: {
+        trigger: ".synonymizer-advantages-section",
+        start: "top 70%",
+        end: "bottom top",
+        scrub: true,
+    },
+});
