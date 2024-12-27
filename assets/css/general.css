@@ -1334,7 +1334,7 @@
     background: rgba(18, 18, 18, 0.8);
     backdrop-filter: blur(20px);
     border-radius: 20px;
-    padding: 10px 35px;
+    padding: 0 35px;
     max-width: 1090px;
     width: 100%;
 
@@ -1365,7 +1365,7 @@
     max-height: 0;
     opacity: 0;
     visibility: hidden;
-    transition: .3s;
+    transition: .6s;
 }
 
 .faq-item.active .faq-item-icon::after {

@@ -6,7 +6,7 @@ gsap.to(".hero-parallax-image ", {
     y: 150,
     scrollTrigger: {
         trigger: ".poetry-hero-section",
-        start: "top top",
+        start: "top 10%",
         end: "bottom top",
         scrub: true,
     },
@@ -19,9 +19,10 @@ gsap.to(".industry-parallax-img ", {
     y: 250,
     scrollTrigger: {
         trigger: ".industry-section",
-        start: "top top",
+        start: "top 70%",
         end: "bottom top",
         scrub: true,
+
     },
 });
 
@@ -30,7 +31,7 @@ gsap.to(".verse-parallax--one", {
     x: -250,
     scrollTrigger: {
         trigger: ".first-verse-section",
-        start: "top top",
+        start: "top 80%",
         end: "bottom top",
         scrub: true,
     },
@@ -39,7 +40,7 @@ gsap.to(".verse-parallax--two", {
     x: -250,
     scrollTrigger: {
         trigger: ".first-verse-section",
-        start: "top top",
+        start: "top 80%",
         end: "bottom top",
         scrub: true,
     },
@@ -49,16 +50,17 @@ gsap.to(".verse-parallax--for", {
     x: 250,
     scrollTrigger: {
         trigger: ".first-verse-section",
-        start: "top top",
+        start: "top 80%",
         end: "bottom top",
         scrub: true,
+
     },
 });
 gsap.to(".verse-parallax--tree", {
-    x: 200,
+    x: 250,
     scrollTrigger: {
         trigger: ".first-verse-section",
-        start: "top top",
+        start: "top 80%",
         end: "bottom top",
         scrub: true,
     },
@@ -67,7 +69,7 @@ gsap.to(".advantages-parallax--one", {
     y: 200,
     scrollTrigger: {
         trigger: ".advantages-section",
-        start: "top top",
+        start: "top 100%",
         end: "bottom top",
         scrub: true,
     },
@@ -85,7 +87,7 @@ gsap.to(".presentation-hero-parallax", {
     y: 200,
     scrollTrigger: {
         trigger: ".presentation-hero-section",
-        start: "top top",
+        start: "top 10%",
         end: "bottom top",
         scrub: true,
     },
@@ -104,8 +106,8 @@ gsap.to(".presentation-advantages-parallax", {
     y: -200,
     scrollTrigger: {
         trigger: ".presentation-advantages-section",
-        start: "top 70%",
-        end: "bottom top",
+        start: "top 90%",
+        end: "bottom+=200px top",
         scrub: true,
     },
 });
