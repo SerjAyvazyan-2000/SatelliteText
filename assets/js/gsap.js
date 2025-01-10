@@ -123,9 +123,11 @@ gsap.to(".synonymizer-animation ", {
     },
 });
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#wrapper'),
+    smooth: true,
+    multiplier: 1,
 
-ScrollSmoother.create({
-    smooth: 2,
-    effects: true,
-    smoothTouch: 0.1,
 });
+
+
