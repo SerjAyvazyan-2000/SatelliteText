@@ -1,9 +1,10 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
+
 // Анимация элемента
 gsap.to(".hero-parallax-image ", {
-    y: 150,
+    y: -150,
     scrollTrigger: {
         trigger: ".poetry-hero-section",
         start: "top 10%",
@@ -16,7 +17,7 @@ gsap.to(".hero-parallax-image ", {
 
 // Анимация элемента
 gsap.to(".industry-parallax-img ", {
-    y: 250,
+    y: -250,
     scrollTrigger: {
         trigger: ".industry-section",
         start: "top 70%",
@@ -26,47 +27,47 @@ gsap.to(".industry-parallax-img ", {
     },
 });
 
-
-gsap.to(".verse-parallax--one", {
-    x: -250,
-    scrollTrigger: {
-        trigger: ".first-verse-section",
-        start: "top 80%",
-        end: "bottom top",
-        scrub: true,
-    },
-});
-gsap.to(".verse-parallax--two", {
-    x: -250,
-    scrollTrigger: {
-        trigger: ".first-verse-section",
-        start: "top 80%",
-        end: "bottom top",
-        scrub: true,
-    },
-});
-
-gsap.to(".verse-parallax--for", {
-    x: 250,
-    scrollTrigger: {
-        trigger: ".first-verse-section",
-        start: "top 80%",
-        end: "bottom top",
-        scrub: true,
-
-    },
-});
-gsap.to(".verse-parallax--tree", {
-    x: 250,
-    scrollTrigger: {
-        trigger: ".first-verse-section",
-        start: "top 80%",
-        end: "bottom top",
-        scrub: true,
-    },
-});
+//
+// gsap.to(".verse-parallax--one", {
+//     x: -250,
+//     scrollTrigger: {
+//         trigger: ".first-verse-section",
+//         start: "top 80%",
+//         end: "bottom top",
+//         scrub: true,
+//     },
+// });
+// gsap.to(".verse-parallax--two", {
+//     x: -250,
+//     scrollTrigger: {
+//         trigger: ".first-verse-section",
+//         start: "top 80%",
+//         end: "bottom top",
+//         scrub: true,
+//     },
+// });
+//
+// gsap.to(".verse-parallax--for", {
+//     x: 250,
+//     scrollTrigger: {
+//         trigger: ".first-verse-section",
+//         start: "top 80%",
+//         end: "bottom top",
+//         scrub: true,
+//
+//     },
+// });
+// gsap.to(".verse-parallax--tree", {
+//     x: 250,
+//     scrollTrigger: {
+//         trigger: ".first-verse-section",
+//         start: "top 80%",
+//         end: "bottom top",
+//         scrub: true,
+//     },
+// });
 gsap.to(".advantages-parallax--one", {
-    y: 200,
+    y: -200,
     scrollTrigger: {
         trigger: ".advantages-section",
         start: "top 100%",
@@ -75,7 +76,7 @@ gsap.to(".advantages-parallax--one", {
     },
 });
 gsap.to(".rewriting-hero-parallax", {
-    y: 200,
+    y: -200,
     scrollTrigger: {
         trigger: ".rewriting-hero-section",
         start: "top top",
@@ -84,7 +85,7 @@ gsap.to(".rewriting-hero-parallax", {
     },
 });
 gsap.to(".presentation-hero-parallax", {
-    y: 200,
+    y: -200,
     scrollTrigger: {
         trigger: ".presentation-hero-section",
         start: "top 10%",
@@ -120,4 +121,11 @@ gsap.to(".synonymizer-animation ", {
         end: "bottom top",
         scrub: true,
     },
+});
+
+
+ScrollSmoother.create({
+    smooth: 2,
+    effects: true,
+    smoothTouch: 0.1,
 });

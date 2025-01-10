@@ -465,6 +465,34 @@
     background-repeat: no-repeat;
 
 }
+.advantages-parallax--one::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/blur20.png');
+    top: -100px;
+    width: 160%;
+    height: 80%;
+    left: 00px;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    background-repeat: no-repeat;
+
+}
+.advantages-parallax--one::before {
+    position: absolute;
+    content: '';
+    background-image: url('../images/blur21.png');
+    bottom: 100px;
+    width: 120%;
+    height: 40%;
+    left: 170px;
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    background-repeat: no-repeat;
+
+}
 
 .advantages-parallax {
     position: absolute;
@@ -1014,8 +1042,9 @@
     border-radius: 40px;
     position: relative;
     padding: 33px 29px 29px 29px;
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(18, 18, 18, 1);
     min-height: 425px;
+    z-index: 2;
 
 }
 
@@ -1223,6 +1252,7 @@
 .faq-item {
     gap: 10px;
     cursor: pointer;
+    transition: .6s;
 }
 
 .faq-item-icon {
@@ -1357,7 +1387,9 @@
     opacity: .6;
     visibility: visible;
     max-height: 800px;
-    padding: 0 0 29px 80px;
+    transition: .6s;
+    padding-bottom: 29px;
+
 
 }
 
@@ -1366,6 +1398,7 @@
     opacity: 0;
     visibility: hidden;
     transition: .6s;
+    padding-left: 80px;
 }
 
 .faq-item.active .faq-item-icon::after {
@@ -1381,7 +1414,19 @@
     padding: 100px 0 211px 0;
     position: relative;
 }
-
+.first-verse-section::after{
+    position: absolute;
+    content: '';
+    background-image: url('../images/firstVerseDecor.png');
+    width: 100%;
+    height: 140%;
+    top: -214px;
+    left: 0;
+    background-size: cover;
+    background-position: 0 -70px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 .first-verse-title {
     margin-top: 25px;
 }
@@ -1483,6 +1528,9 @@
 }
 
 @media (max-width: 1400px) {
+    .first-verse-section::after{
+        background-position: center;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1560,7 +1608,9 @@
     .industry-parallax-img {
         display: none;
     }
-
+    .first-verse-section::after{
+        display: none;
+    }
     .industry-item--two {
         margin-top: 0;
     }
