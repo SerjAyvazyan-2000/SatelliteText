@@ -123,11 +123,7 @@ gsap.to(".synonymizer-animation ", {
     },
 });
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#wrapper'),
-    smooth: true,
-    multiplier: 1,
 
-});
+let Scrollbar = window.Scrollbar;
 
-
+Scrollbar.init(document.querySelector('#wrapper'), options);
