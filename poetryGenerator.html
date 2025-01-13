@@ -9,69 +9,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header-body G-justify-between">
+            <a class="header-logo" href="poetryGenerator.html">
+                <img class="logo-desktop" src="assets/images/logo.svg" alt="">
+                <img class="logo-mobile" src="assets/images/logoMobile.svg" alt="">
 
-<div id="wrapper" data-rellax-speed="7" class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header-body G-justify-between">
-                    <a class="header-logo" href="poetryGenerator.html">
-                        <img class="logo-desktop" src="assets/images/logo.svg" alt="">
-                        <img class="logo-mobile" src="assets/images/logoMobile.svg" alt="">
-
-                    </a>
-                    <div class="menu-bg"></div>
-                    <nav class="menu">
-                        <div class="menu-mobile-cnt">
-                            <div class="menu-content-mobile G-flex-column">
-                                <h3 class="menu-mobile-title">Satellite AI</h3>
-                                <p class="menu-mobile-clue">
-                                    Универсальная платформа
-                                    <span class="text-wrap"> для удаление фона c фото</span>
-                                    <span class="text-wrap">в один клик</span>
-                                </p>
-                            </div>
-                            <ul class="menu-list G-flex">
-                                <li class='menu-list-item'>
-                                    <a class="menu-list-link G-align-center" href="#">
-                                        <span>Возможности</span>
-                                    </a>
-                                </li>
-
-                                <li class="menu-list-item">
-                                    <a class="menu-list-link" href="#">Для кого</a>
-                                </li>
-                                <li class="menu-list-item">
-                                    <a class="menu-list-link" href="#">Отзывы</a>
-                                </li>
-                                <li class="menu-list-item">
-                                    <a class="menu-list-link" href="#">FAQ</a>
-                                </li>
-                            </ul>
-                            <div class="header-mobile-actions ">
-                                <button class="btn-login btn-black ">Вход</button>
-                                <button class="btn-register btn-white  ">Регистрация</button>
-                            </div>
-                        </div>
-
-                    </nav>
-                    <div class="burger">
-                        <span></span>
+            </a>
+            <div class="menu-bg"></div>
+            <nav class="menu">
+                <div class="menu-mobile-cnt">
+                    <div class="menu-content-mobile G-flex-column">
+                        <h3 class="menu-mobile-title">Satellite AI</h3>
+                        <p class="menu-mobile-clue">
+                            Универсальная платформа
+                            <span class="text-wrap"> для удаление фона c фото</span>
+                            <span class="text-wrap">в один клик</span>
+                        </p>
                     </div>
-                    <div class="header-actions G-align-center">
+                    <ul class="menu-list G-flex">
+                        <li class='menu-list-item'>
+                            <a class="menu-list-link G-align-center" href="#">
+                                <span>Возможности</span>
+                            </a>
+                        </li>
+
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#">Для кого</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="menu-list-item">
+                            <a class="menu-list-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="header-mobile-actions ">
                         <button class="btn-login btn-black ">Вход</button>
                         <button class="btn-register btn-white  ">Регистрация</button>
                     </div>
                 </div>
+
+            </nav>
+            <div class="burger">
+                <span></span>
             </div>
-        </header>
+            <div class="header-actions G-align-center">
+                <button class="btn-login btn-black ">Вход</button>
+                <button class="btn-register btn-white  ">Регистрация</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div  class="wrapper">
 
         <main class="main">
 
 
-            <section class="poetry-hero-section hero-section ">
+            <section class="poetry-hero-section parallax-section hero-section ">
                 <div class="container">
                     <div class="poetry-hero-body hero-body">
                         <div class="poetry-hero-titles hero-titles G-column-center">
@@ -157,13 +156,12 @@
                         </div>
                     </div>
 
-                    <div class="hero-parallax-image parallax-image--one">
+                    <div class="hero-parallax-image parallax-image--one parallax">
                         <img src="assets/images/parallax1.png" alt="">
                     </div>
-                    <div class="hero-parallax-image parallax-image--two">
+                    <div class="hero-parallax-image parallax-image--two parallax">
                         <img src="assets/images/parallax2.png" alt="">
                     </div>
-
 
                     <div style="background-image: url('assets/images/heroBlur.png')" class="poetry-hero-blur ">
                     </div>
@@ -172,11 +170,11 @@
                     </div>
                 </div>
 
-                <div class="hero-parallax-image parallax-image--tree">
+                <div class="hero-parallax-image parallax-image--tree parallax">
                     <img src="assets/images/parallax3.png" alt="">
                 </div>
 
-                <div class="hero-parallax-blur parallax-blur-one">
+                <div class="hero-parallax-blur parallax-blur-one ">
                     <img src="assets/images/heroBlur3.png" alt="">
                 </div>
 
@@ -250,7 +248,7 @@
             </section>
 
 
-            <section id="forWhom" class="advantages-section section">
+            <section id="forWhom" class="advantages-section parallax-section section">
                 <div class="container">
                     <div class="advantages-body">
                         <div class="advantages-titles block-titles  G-column-center">
@@ -359,7 +357,7 @@
                     </div>
                 </div>
 
-                <div class="advantages-parallax advantages-parallax--one">
+                <div class="advantages-parallax advantages-parallax--one parallax">
                     <img src="assets/images/advantagesParallax4.png" alt="">
                 </div>
                 <div class="advantages-parallax advantages-blur--two">
@@ -616,7 +614,7 @@
             </section>
 
 
-            <section class="industry-section section">
+            <section class="industry-section parallax-section section">
                 <div class="container">
                     <div class="industry-body">
                         <div class="industry-block-titles  G-column-center">
@@ -695,22 +693,22 @@
 
                 </div>
 
-                <div class="industry-parallax-img industry-parallax--one">
+                <div class="industry-parallax-img parallax industry-parallax--one">
                     <img src="assets/images/industryParallax.png" alt="">
                 </div>
-                <div class="industry-parallax-img industry-parallax--two">
+                <div class="industry-parallax-img parallax industry-parallax--two">
                     <img src="assets/images/industryParallax2.png" alt="">
                 </div>
-                <div class="industry-parallax-img industry-parallax--tree">
+                <div class="industry-parallax-img parallax industry-parallax--tree">
                     <img src="assets/images/industryParallax3.png" alt="">
                 </div>
-                <div class="industry-parallax-img industry-parallax--blur">
+                <div class="industry-parallax-img  industry-parallax--blur">
                     <img src="assets/images/blur7.png" alt="">
                 </div>
-                <div class="industry-parallax-img industry-parallax--prism">
+                <div class="industry-parallax-img  industry-parallax--prism">
                     <img src="assets/images/prism.png" alt="">
                 </div>
-                <div class="industry-parallax-img industry-parallax--blur2">
+                <div class="industry-parallax-img  industry-parallax--blur2">
                     <img src="assets/images/blur8.png" alt="">
                 </div>
 
@@ -1168,16 +1166,16 @@
 
 
 </div>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
-<script src="assets/js/gsap.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js" integrity="sha512-3f8C6NAQZv0YfwHFnjF231IIVcfZPnzL8EcHhNlzcoSRoEvC/iKDbtC+oYvL+0fRmEUMUYSvrZSE08TcRZYpgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/plugins/overscroll.min.js" integrity="sha512-r0mvJ5yIFzuQ9ExHaNeSkBCo4G5XtXs4yyyYozSR3suiFfNhqgoc14P0tVKkqovImxcCcLAkWlQ9B5hUl0gfdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/smooth-scrollbar@8.8.4/dist/smooth-scrollbar.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/swiper.js"></script>
 
 </body>
 </html>
+
+

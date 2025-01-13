@@ -80,7 +80,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
     const icon = item.querySelector('.faq-item-icon');
     if (icon) {
         icon.addEventListener('click', (event) => {
-            event.stopPropagation(); // Предотвращаем срабатывание родительского клика
+            event.stopPropagation();
             toggleActiveState(item);
         });
     }
@@ -133,6 +133,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     activateTab(tabs[0]);
+});
+
+
+
+
+const scrollbar = Scrollbar.init(document.querySelector(".wrapper"), {
+    damping: 0.08,
+});
+
+
+let lastScrollTop = 0;
+
+scrollbar.addListener(() => {
+    document.querySelectorAll(".parallax").forEach(image => {
+        const section = image.closest(".parallax-section");
+        const sectionTop = section.getBoundingClientRect().bottom - 200;
+        const sectionHeight = section.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const isSectionVisible = sectionTop < windowHeight && sectionTop + sectionHeight > 0;
+
+        if (isSectionVisible) {
+            const progress = (windowHeight - sectionTop) / (windowHeight + sectionHeight);
+
+            const maxShift = -250;
+
+            const shift = progress * maxShift;
+
+            if (lastScrollTop < window.scrollY) {
+                image.style.transform = `translateY(${shift}px)`;
+            }
+            else {
+                image.style.transform = `translateY(${shift}px)`;
+            }
+        } else {
+            image.style.transform = "translateY(0px)";
+        }
+
+        lastScrollTop = window.scrollY <= 0 ? 0 : window.scrollY; // Обновляем значение lastScrol
+
+    });
+});
+
+
+scrollbar.addListener(() => {
+    document.querySelectorAll(".parallax-top").forEach(image => {
+        const section = image.closest(".parallax-section");
+        const sectionTop = section.getBoundingClientRect().top +200;
+        const sectionHeight = section.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const isSectionVisible = sectionTop < windowHeight && sectionTop + sectionHeight > 0;
+
+        if (isSectionVisible) {
+            const progress = (windowHeight - sectionTop) / (windowHeight + sectionHeight);
+
+            const maxShift = -250;
+
+            const shift = progress * maxShift;
+
+            if (lastScrollTop < window.scrollY) {
+                image.style.transform = `translateY(${shift}px)`;
+            }
+            else {
+                image.style.transform = `translateY(${shift}px)`;
+            }
+        } else {
+            image.style.transform = "translateY(0px)";
+        }
+
+        lastScrollTop = window.scrollY <= 0 ? 0 : window.scrollY; // Обновляем значение lastScrol
+
+    });
 });
 
 

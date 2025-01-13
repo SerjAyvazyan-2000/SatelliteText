@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    height: 100%;
+
 }
 
 .big-container {
@@ -30,6 +32,8 @@
 
 .main {
     flex: 1 1 auto;
+    overflow: hidden;
+
 }
 
 .btn-black {
@@ -347,7 +351,17 @@
     color: rgba(255, 255, 255, 1);
 
 }
+.parallax{
+    transform: translateY(0);
+    will-change: transform;
+    transition: transform 0.1s linear;
 
+}
+.parallax-top{
+    transform: translateY(0);
+    will-change: transform;
+    transition: transform 0.1s linear;
+}
 .icon-star1 {
     background: rgba(93, 52, 169, 1);
     font-size: 27px;
@@ -482,10 +496,10 @@
     position: absolute;
     content: '';
     background-image: url('../images/blur21.png');
-    bottom: 100px;
-    width: 120%;
-    height: 40%;
-    left: 170px;
+    bottom: -600px;
+    width: 180%;
+    height: 120%;
+    left: 0;
     background-size: cover;
     background-position: center;
     z-index: 3;
@@ -509,9 +523,10 @@
 }
 
 .advantages-blur--tree {
-    left: -200px;
-    top: 300px;
+    left: -30px;
+    top: -200px;
     z-index: 3;
+    transform: rotate(-90deg);
 }
 
 
@@ -519,18 +534,7 @@
     position: relative;
 }
 
-/*.advantages-body::after {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    background-image: url('../images/advantagesBlur.png');*/
-/*    top: -300px;*/
-/*    width: 100%;*/
-/*    height: 190%;*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
 
-/*}*/
 
 .advantages-swiper-wrapper {
     align-items: flex-end;
@@ -1530,13 +1534,20 @@
     .first-verse-section::after{
         background-position: center;
     }
+    .advantages-blur--tree {
+        left: -200px;
+
+    }
 }
 
 @media (max-width: 1200px) {
     .possibilities-slider-box {
         display: block;
     }
+    .advantages-blur--tree {
+       display: none;
 
+    }
     .possibilities-tabs-block {
         display: none;
     }
