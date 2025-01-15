@@ -2,10 +2,10 @@
 
 
 gsap.registerPlugin(ScrollTrigger);
-
-const scrollbar = Scrollbar.init(document.querySelector("#wrapper"), {
-    damping: 0.08,
-});
+//
+// const scrollbar = Scrollbar.init(document.querySelector("#wrapper"), {
+//     damping: 0.08,
+// });
 
 scrollbar.addListener(() => {
 
